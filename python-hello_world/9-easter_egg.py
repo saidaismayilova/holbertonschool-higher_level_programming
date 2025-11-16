@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 import this
-print("The Zen of Python", end=", by Tim Peters\n")
+s = "".join([this.d.get(c, c) for c in this.s])
+print(s, end="")
