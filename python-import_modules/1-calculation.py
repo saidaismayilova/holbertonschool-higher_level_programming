@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 if _name_ == "_main_":
-from 1-calculation import add, sub, div, mul
+from calculator_1 import add, sub, div, mul
 a = 10
 b = 5
 print("{} + {} = {}".format(a, b, add(a, b)))
