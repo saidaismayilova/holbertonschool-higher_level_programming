@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import sys
-if _name_ == "_main_":
-    argv=sys.argv[1:]
+if __name__ == "__main__":
+    argv = sys.argv[1:]  # faylın özü sayılmır
     total = 0
     for num in argv:
-        total += int(num)
-        print total
+        total += int(num)  
+    print(total)
+
