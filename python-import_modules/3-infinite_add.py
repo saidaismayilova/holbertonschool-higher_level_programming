@@ -6,4 +6,3 @@ if __name__ == "__main__":
     for num in argv:
         total += int(num)  
     print(total)
-
