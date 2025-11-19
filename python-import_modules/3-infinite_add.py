@@ -5,4 +5,4 @@ if __name__ == "__main__":
     total = 0
     for num in argv:
         total += int(num)
-    print(total) 
+    print(total)
