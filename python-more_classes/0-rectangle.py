@@ -1,0 +1,5 @@
+#!/usr/bin/python3
+if __name__ = "__main__"
+class Rectangle:
+    """this is empty class"""
+pass
