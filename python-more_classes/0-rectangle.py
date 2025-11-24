@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-if __name__ = "__main__"
+"""Module that defines an empty Rectangle class."""
 class Rectangle:
-    """this is empty class"""
-pass
+    """Represents an empty Rectangle."""
+    pass
