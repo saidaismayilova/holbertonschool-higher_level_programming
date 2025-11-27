@@ -10,7 +10,6 @@ class Rectangle:
     Represents a rectangle with width and height.
     Tracks the number of instances and allows a custom print symbol.
     """
-
     number_of_instances = 0
     print_symbol = "#"
 
