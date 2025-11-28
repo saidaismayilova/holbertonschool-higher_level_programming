@@ -5,14 +5,14 @@ it is important
 """
 
 
-    def lookup(obj):
+def lookup(obj):
     """
-    Return the list 
+    Return the list
 
     Args:
-        obj: The object 
+        obj: The object
 
     Returns:
-        list: A list containing the object's 
+        list: A list containing the object's
     """
     return dir(obj)
