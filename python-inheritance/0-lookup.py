@@ -1,7 +1,18 @@
 #!/usr/bin/python3
-    """this is path"""
+"""
+This is path
+it is important
+"""
 
 
     def lookup(obj):
-    """Return the list of available attributes and methods of an object."""
+    """
+    Return the list 
+
+    Args:
+        obj: The object 
+
+    Returns:
+        list: A list containing the object's 
+    """
     return dir(obj)
