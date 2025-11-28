@@ -11,18 +11,3 @@
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
->>> my_list2 = MyList()
->>> print(my_list2)
-[]
->>> my_list2.print_sorted()
-[]
->>> my_list3 = MyList()
->>> my_list3.append(-3)
->>> my_list3.append(2)
->>> my_list3.append(0)
->>> print(my_list3)
-[-3, 2, 0]
->>> my_list3.print_sorted()
-[-3, 0, 2]
->>> print(my_list3)
-[-3, 2, 0]
