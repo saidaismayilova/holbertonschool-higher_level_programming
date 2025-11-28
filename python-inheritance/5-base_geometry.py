@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""this is
-empty
-path"""
+"""
+This module defines an empty class BaseGeometry.
+"""
 
 
 class BaseGeometry:
-    """this is 
-    empty class
+    """
+    Empty class that will be expanded later.
     """
     pass
