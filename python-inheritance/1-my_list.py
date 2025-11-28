@@ -1,15 +1,10 @@
 #!/usr/bin/python3
-""" this is path
-it is important
-"""
+"""Module defines MyList class that inherits from list."""
 
 
 class MyList(list):
-   " ""This is class and this class have  a inherits"""
+    """Subclass of list with a method to print a sorted version."""
 
     def print_sorted(self):
-    """"
-        Siyahını artan sıralama qaydasında çap edir.
-        Orijinal siyahıya eyisiklik etmir.
-    """
-print(sorted(self))
+        """Prints a sorted version of the list in ascending order."""
+        print(sorted(self))
