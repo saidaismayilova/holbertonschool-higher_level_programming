@@ -6,18 +6,18 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """A rectangle class that inherits from BaseGeometry"""
+    """Rectangle class that inherits from BaseGeometry."""
 
     def __init__(self, width, height):
-        """Initialize a Rectangle instance with width and height
+        """Initialize Rectangle with width and height.
 
         Args:
-            width (int): The width of the rectangle (must be positive integer)
-            height (int): The height of the rectangle (must be positive integer)
+            width (int): Width of rectangle; must be positive integer.
+            height (int): Height of rectangle; must be positive integer.
 
-        Note:
-            - width and height are private (no getter/setter)
-            - Both values are validated using integer_validator from BaseGeometry
+        Raises:
+            TypeError: If width or height is not an integer.
+            ValueError: If width or height is not greater than 0.
         """
         self.integer_validator("width", width)
         self.integer_validator("height", height)
