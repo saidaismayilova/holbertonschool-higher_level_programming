@@ -1,6 +1,6 @@
 # task_03_xml.py
 
-import xml.etree.Element Tree as ET
+import xml.etree.ElementTree as ET
 
 
 def serialize_to_xml(dictionary, filename):
