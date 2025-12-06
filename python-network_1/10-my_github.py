@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-"""Uses GitHub API to display user id with Basic Authentication"""
+"""
+Script that uses GitHub API to display the authenticated user's id.
+"""
 
 import sys
 import requests
-from requests.auth import HTTPBasicAuth
+
 
 if __name__ == "__main__":
-    # Get username and personal access token from command line
     username = sys.argv[1]
-    password = sys.argv[2]  # Personal access token
+    password = sys.argv[2]  # personal access token
 
-    # GitHub API endpoint for authenticated user
     url = "https://api.github.com/user"
 
-    # Make GET request with Basic Authentication
-    response = requests.get(url, auth=HTTPBasicAuth(username, password))
+    response = requests.get(url, auth=(username, password))
 
-    # Try to get user id from response
     try:
-        user_data = response.json()
-        print(user_data.get('id'))
-    except ValueError:
-        print(None)
+        data = response.json()
+        print(data.get("id"))
+    except Exception:
+        print("None")
