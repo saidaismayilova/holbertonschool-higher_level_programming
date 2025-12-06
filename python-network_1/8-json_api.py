@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
 Script that sends a POST request to http://0.0.0.0:5000/search_user
-with a letter as parameter and displays the result.
+with a letter as parameter and prints the result.
 """
+
 import sys
 import requests
 
@@ -26,6 +27,5 @@ if __name__ == "__main__":
             print("No result")
         else:
             print("[{}] {}".format(data.get("id"), data.get("name")))
-
     except Exception:
         print("Not a valid JSON")
