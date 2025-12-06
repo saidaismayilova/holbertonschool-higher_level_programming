@@ -1,17 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Product Display</title>
+    <meta charset="UTF-8">
+    <title>Products</title>      
 </head>
 <body>
-    <h1>Products</h1>
+    <h1>Product List</h1>
 
     {% if error %}
-        <p style="color:red;">{{ error }}</p>
-    {% endif %}
-
-    {% if products %}
-        <table border="1">
+        <p>{{ error }}</p>
+    {% elif products %}
+        <table>
             <thead>
                 <tr>
                     <th>Name</th>
@@ -21,18 +20,16 @@
             </thead>
             <tbody>
                 {% for product in products %}
-                    <tr>
-                        <td>{{ product.name }}</td>
-                        <td>{{ product.category }}</td>
-                        <td>{{ product.price }}</td>
-                    </tr>
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category }}</td>
+                    <td>{{ product.price }}</td>
+                </tr>
                 {% endfor %}
             </tbody>
         </table>
     {% else %}
-        {% if not error %}
-            <p>No products available</p>
-        {% endif %}
+        <p>Product not found</p>
     {% endif %}
 </body>
 </html>
